@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 1</title>
+</head>
+<body>
+    <button onclick="calculerreduction()">   Clicker ici </button>
+    <script>
+function calculerreduction(){
+    
+    /*1. Demander le montant à l'utilisateur*/
+let montant = Number(prompt("Entrez le montant de vos achats en Dh :"));
+let taux = 0;
+/* 2. Calcul de la réduction*/
+if (montant < 200)
+     {taux = 0.05;} 
+else
+    if (montant >= 200 && montant <= 500) 
+   
+        {taux = 0.10;}
+ else
+    { taux = 0.20;}
+ /*3. Calculs*/
+ let reduction = montant * taux;
+let total = montant - reduction;
+/* 4. Affichage dans la console*/
+console.log(
+    "Pour un montant de " + montant + "Dh, votre réduction est de " +
+    reduction + "Dh et le total est " + total + "Dh."
+);
+
+}
+
+
+
+    </script>
+<h2>Exercice 1 - Calcul de réduction</h2>
+
+
+</body>
+</html>
